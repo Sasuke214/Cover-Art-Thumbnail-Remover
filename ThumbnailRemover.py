@@ -43,7 +43,7 @@ class AlbumArtRemover:
             for i in range(0,totalSongs):
                 try:
                     #load the audio file
-                    audiofile=eyed3.load(totalSongs[i])
+                    audiofile=eyed3.load(songList[i])
                     #remove the thumbnail art
                     audiofile.tag.images.remove(u'')
                     #save the file
