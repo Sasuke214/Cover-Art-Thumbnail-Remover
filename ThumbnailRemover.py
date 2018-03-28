@@ -47,6 +47,7 @@ class AlbumArtRemover:
                     #remove the thumbnail art
                     audiofile.tag.images.remove(u'')
                     #save the file
+                    audiofile.tag.save()
                 except:
                     continue
         else:
